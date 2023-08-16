@@ -1,0 +1,106 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Dashboard/1.0.0": {
+        "dependencies": {
+          "ClickOnceToSquirrelMigrator": "0.4.1",
+          "squirrel.windows": "0.99.1.1"
+        },
+        "runtime": {
+          "Dashboard.dll": {}
+        }
+      },
+      "ClickOnceToSquirrelMigrator/0.4.1": {
+        "dependencies": {
+          "squirrel.windows": "0.99.1.1"
+        },
+        "runtime": {
+          "lib/net45/ClickOnceToSquirrelMigrator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DeltaCompressionDotNet/1.0.0": {
+        "runtime": {
+          "lib/net45/DeltaCompressionDotNet.MsDelta.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/net45/DeltaCompressionDotNet.PatchApi.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/net45/DeltaCompressionDotNet.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Splat/1.6.2": {
+        "runtime": {
+          "lib/Net45/Splat.dll": {
+            "assemblyVersion": "1.6.2.0",
+            "fileVersion": "1.6.2.0"
+          }
+        }
+      },
+      "squirrel.windows/0.99.1.1": {
+        "dependencies": {
+          "DeltaCompressionDotNet": "1.0.0",
+          "Splat": "1.6.2"
+        },
+        "runtime": {
+          "lib/Net45/ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "0.86.0.518",
+            "fileVersion": "0.86.0.518"
+          },
+          "lib/Net45/Squirrel.dll": {
+            "assemblyVersion": "0.99.1.1",
+            "fileVersion": "0.99.1.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dashboard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClickOnceToSquirrelMigrator/0.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZviM8nY511eNWgtdfQyZGvBLuO/6EI6anUvRmM5jd2lIL6lixlGeg4x+cMmHsJIkQLTmstddLyZFdoCE6ZBC8A==",
+      "path": "clickoncetosquirrelmigrator/0.4.1",
+      "hashPath": "clickoncetosquirrelmigrator.0.4.1.nupkg.sha512"
+    },
+    "DeltaCompressionDotNet/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nwbZAYd+DblXAIzlnwDSnl0CiCm8jWLfHSYnoN4wYhtIav6AegB3+T/vKzLbU2IZlPB8Bvl8U3NXpx3eaz+N5w==",
+      "path": "deltacompressiondotnet/1.0.0",
+      "hashPath": "deltacompressiondotnet.1.0.0.nupkg.sha512"
+    },
+    "Splat/1.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DeH0MxPU+D4JchkIDPYG4vUT+hsWs9S41cFle0/4K5EJMXWurx5DzAkj2366DfK14/XKNhsu6tCl4dZXJ3CD4w==",
+      "path": "splat/1.6.2",
+      "hashPath": "splat.1.6.2.nupkg.sha512"
+    },
+    "squirrel.windows/0.99.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MwC9q1AeDN6/d+H6QpMunXW3eYwKm8C6QIgV3EcnkWGFlBbr9c+Mn2R9DwAbLqZd4/T7giMDh2x4n4mXSiQxHQ==",
+      "path": "squirrel.windows/0.99.1.1",
+      "hashPath": "squirrel.windows.0.99.1.1.nupkg.sha512"
+    }
+  }
+}
