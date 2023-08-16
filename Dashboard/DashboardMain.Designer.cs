@@ -40,25 +40,15 @@
             pictureBox1 = new PictureBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
             userInfoText = new Label();
-            panel3 = new Panel();
-            button2 = new Button();
-            label5 = new Label();
-            pictureBox2 = new PictureBox();
-            quantumPicture = new PictureBox();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            panel4 = new Panel();
+            lblTitle = new Label();
             textBox1 = new TextBox();
             button1 = new Button();
-            flowLayoutPanel3 = new FlowLayoutPanel();
+            minimizeBtn = new Button();
+            formLoaderPnl = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)quantumPicture).BeginInit();
-            flowLayoutPanel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -200,112 +190,28 @@
             userInfoText.TabIndex = 2;
             userInfoText.Text = "User Information here";
             // 
-            // panel3
+            // panel4
             // 
-            panel3.BackColor = Color.FromArgb(37, 42, 64);
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(pictureBox2);
-            panel3.Controls.Add(quantumPicture);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label2);
-            panel3.Location = new Point(3, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(744, 152);
-            panel3.TabIndex = 4;
+            panel4.BackColor = Color.FromArgb(46, 51, 73);
+            panel4.Cursor = Cursors.Hand;
+            panel4.Location = new Point(184, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(693, 19);
+            panel4.TabIndex = 5;
+            panel4.MouseDown += panel4_MouseDown;
+            panel4.MouseMove += panel4_MouseMove;
+            panel4.MouseUp += panel4_MouseUp;
             // 
-            // button2
+            // lblTitle
             // 
-            button2.BackColor = Color.LightBlue;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Microsoft YaHei UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(484, 103);
-            button2.Name = "button2";
-            button2.Size = new Size(247, 38);
-            button2.TabIndex = 6;
-            button2.Text = "Launch!";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(159, 151, 176);
-            label5.Location = new Point(209, 113);
-            label5.Name = "label5";
-            label5.Size = new Size(68, 21);
-            label5.TabIndex = 5;
-            label5.Text = "- Meme";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = Dashboard.Properties.Resources.green_circle_2866218524;
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(173, 111);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
-            // 
-            // quantumPicture
-            // 
-            quantumPicture.BackgroundImage = (Image)resources.GetObject("quantumPicture.BackgroundImage");
-            quantumPicture.BackgroundImageLayout = ImageLayout.Zoom;
-            quantumPicture.Location = new Point(3, 4);
-            quantumPicture.Name = "quantumPicture";
-            quantumPicture.Size = new Size(164, 143);
-            quantumPicture.TabIndex = 3;
-            quantumPicture.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(159, 151, 176);
-            label4.Location = new Point(182, 47);
-            label4.Name = "label4";
-            label4.Size = new Size(193, 21);
-            label4.TabIndex = 2;
-            label4.Text = "Very fun classic calculator!";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft YaHei UI", 21F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(0, 146, 249);
-            label3.Location = new Point(644, 4);
-            label3.Name = "label3";
-            label3.Size = new Size(87, 37);
-            label3.TabIndex = 1;
-            label3.Text = "Free!";
-            label3.Click += label3_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Nirmala UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(173, 4);
-            label2.Name = "label2";
-            label2.Size = new Size(244, 32);
-            label2.TabIndex = 0;
-            label2.Text = "Quantum Calculator";
-            label2.Click += label2_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft YaHei UI", 21F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(158, 161, 176);
-            label1.Location = new Point(208, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(171, 37);
-            label1.TabIndex = 1;
-            label1.Text = "Dashboard";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Microsoft YaHei UI", 21F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTitle.ForeColor = Color.FromArgb(158, 161, 176);
+            lblTitle.Location = new Point(208, 22);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(228, 37);
+            lblTitle.TabIndex = 1;
+            lblTitle.Text = "YLF Dashboard";
             // 
             // textBox1
             // 
@@ -318,6 +224,7 @@
             textBox1.Size = new Size(287, 26);
             textBox1.TabIndex = 2;
             textBox1.Text = "Search for an app";
+            textBox1.Visible = false;
             // 
             // button1
             // 
@@ -332,27 +239,42 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // flowLayoutPanel3
+            // minimizeBtn
             // 
-            flowLayoutPanel3.Controls.Add(panel3);
-            flowLayoutPanel3.Location = new Point(192, 79);
-            flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(747, 623);
-            flowLayoutPanel3.TabIndex = 4;
+            minimizeBtn.FlatAppearance.BorderSize = 0;
+            minimizeBtn.FlatStyle = FlatStyle.Flat;
+            minimizeBtn.ForeColor = Color.White;
+            minimizeBtn.Location = new Point(883, 12);
+            minimizeBtn.Name = "minimizeBtn";
+            minimizeBtn.Size = new Size(25, 25);
+            minimizeBtn.TabIndex = 6;
+            minimizeBtn.Text = "-";
+            minimizeBtn.UseVisualStyleBackColor = true;
+            minimizeBtn.Click += minimizeBtn_Click;
             // 
-            // Dashboard
+            // formLoaderPnl
+            // 
+            formLoaderPnl.Dock = DockStyle.Bottom;
+            formLoaderPnl.Location = new Point(185, 79);
+            formLoaderPnl.Name = "formLoaderPnl";
+            formLoaderPnl.Size = new Size(766, 498);
+            formLoaderPnl.TabIndex = 7;
+            // 
+            // DashboardMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 73);
             ClientSize = new Size(951, 577);
-            Controls.Add(flowLayoutPanel3);
+            Controls.Add(formLoaderPnl);
+            Controls.Add(minimizeBtn);
+            Controls.Add(panel4);
             Controls.Add(button1);
             Controls.Add(textBox1);
-            Controls.Add(label1);
+            Controls.Add(lblTitle);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Dashboard";
+            Name = "DashboardMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
             Load += Dashboard_Load;
@@ -360,11 +282,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)quantumPicture).EndInit();
-            flowLayoutPanel3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -378,21 +295,15 @@
         private Button settingsBtn;
         private Button statsBtn;
         private Panel pnlNav;
-        private Label label1;
+        private Label lblTitle;
         private TextBox textBox1;
         private Button button1;
-        private Panel panel3;
-        private Label label2;
-        private Label label4;
-        private Label label3;
         private FlowLayoutPanel flowLayoutPanel1;
         private FlowLayoutPanel flowLayoutPanel2;
-        private FlowLayoutPanel flowLayoutPanel3;
-        private PictureBox quantumPicture;
-        private Label label5;
-        private PictureBox pictureBox2;
-        private Button button2;
         private PictureBox pictureBox1;
         private Label userNameText;
+        private Panel panel4;
+        private Button minimizeBtn;
+        private Panel formLoaderPnl;
     }
 }
