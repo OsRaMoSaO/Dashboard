@@ -1,4 +1,4 @@
-# Dashboard
+# Dashboard W.I.P
 - This is a dashboard to launch and install all the .NET applications i have made
 - Made in C# using .NET 6
 
