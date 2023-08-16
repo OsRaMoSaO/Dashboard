@@ -1,5 +1,4 @@
 using Zipperoni;
-using Squirrel;
 
 namespace Dashboard
 {
@@ -16,7 +15,6 @@ namespace Dashboard
             ApplicationConfiguration.Initialize();
             Application.Run(new DashboardMain());
         }
-
 
     }
 }
